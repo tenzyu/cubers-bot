@@ -1,0 +1,21 @@
+import os
+
+import dotenv
+
+dotenv.load_dotenv()
+
+# token
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+
+# channels
+CH_AUTHORIZE_ID = int(os.getenv("CH_AUTHORIZE_ID", "761838850929590353"))
+CH_NOTICE_JOIN_ID = int(os.getenv("CH_NOTICE_JOIN_ID", "761838728410693655"))
+CH_INTRODUCTION_ID = int(os.getenv("CH_INTRODUCTION_ID", "762276510832001024"))
+
+# roles
+ROLE_AUTHORIZED_ID = int(os.getenv("ROLE_AUTHORIZED_ID", "762296117429796864"))
+ROLE_MEMBER_ID = int(os.getenv("ROLE_MEMBER", "762270759677591552"))
+
+# messages
+MESSAGE_AUTHORIZE_ID = int(
+    os.getenv("MESSAGE_AUTHORIZE_ID", "762273205866987540"))
