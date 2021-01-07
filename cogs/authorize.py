@@ -24,8 +24,7 @@ class Authorize(commands.Cog):
             await member.add_roles(role_members)
             await self.bot.get_channel(constant.CH_NOTICE_JOIN_ID).send(dedent(f"""\
                 :tada: **Hi {member.mention}, welcome to {guild.name} !**
-                Please tells us about yourself! {ch_introduction.mention}
-                Ja: よければ自己紹介をお願いします！ {ch_introduction.mention}
+                よければ自己紹介をお願いします！ {ch_introduction.mention}
                 """))
 
 
